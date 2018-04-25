@@ -1,0 +1,39 @@
+@media screen and(max-width: 700px) {
+    // Contains styling used to convert the header navigation to a more mobile-friendly one
+    @import "mobileNav";
+
+    footer {
+    
+        .siteContainer {
+            width: 80%;
+            justify-content: space-between;
+    
+            #footerNavContainer {
+                width: 250px;
+            }
+        }
+    }
+
+    header .siteContainer {
+        width: 95%;
+        background-image: none;
+        padding: 20px 0;
+    }
+}
+
+@media screen and(max-width: 600px) {
+    footer {
+
+        .siteContainer {
+            display: block;
+
+            #footerNavContainer {
+                width: 100%;
+
+                nav {
+                    padding-bottom: 30px;
+                }
+            }
+        }
+    }
+}

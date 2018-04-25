@@ -1,0 +1,100 @@
+// Contains styling used to convert the header navigation to a more mobile-friendly one
+// Is used in the >700px media query
+header {
+    .siteContainer {
+        
+        input[type='checkbox'] {
+            display: inline-block;
+            position: absolute;
+            height: 22px;
+            width: 33px;
+            right: 10px;
+            bottom: 20px;
+            margin: 0;
+            opacity: 0;
+            cursor: pointer;
+            z-index: 10;
+
+            &:checked ~ nav {
+                transform: translateX(0%);
+            }
+
+            &:checked ~ span {
+                transform: rotate(45deg) translate(-3px, -3px);
+
+                &:nth-child(4) {
+                    opacity: 0;
+                    transform: rotate(0deg) scale(0.2, 0.2);
+                }
+
+                &:nth-child(5) {
+                    transform: rotate(-45deg);
+                }
+            }
+        }
+
+        span:not(:first-child) {
+            display: block;
+            width: 33px;
+            height: 4px;
+            position: absolute;
+            background-color: $secondaryTextColor;
+            border-radius: 2px;
+            transition: transform 0.5s $bezier, opacity 0.55s ease;
+            z-index: 9;
+            
+            &:nth-child(3) {
+                bottom: 38px;
+                right: 10px;
+                transform-origin: 0% 0%;
+            }
+    
+            &:nth-child(4) {
+                bottom: 29px;
+                right: 10px;
+            }
+            
+            &:nth-child(5) {
+                bottom: 20px;
+                right: 10px;
+                transform-origin: 0% 100%;
+            }
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            background-color: $primaryColor;
+            transform: translateX(-100%);
+            transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+        
+            a {
+                font-size: 1.3rem;
+            }
+            
+            .navItemContainer {
+                
+                .fa-caret-down {
+                    display: inline-block;
+                }
+        
+                .navDropDown {
+                    height: 0;
+                    overflow: hidden;
+                    display: block;
+                }
+            }
+        
+            .navItemContainer:not(:last-child) {
+                margin-bottom: 10px;
+            }
+        }
+    }
+}

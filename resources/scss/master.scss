@@ -1,0 +1,26 @@
+// Cubic-bezier used for transitions across the page
+$bezier: cubic-bezier(0.77,0.2,0.05,1.0);
+
+// Contains styling used to reset unwanted styling
+@import "reset";
+
+// Contains color variables used in other SCSS files
+@import "color";
+
+// Contains text-related styling
+@import "text";
+
+// Contains body, main and general container styling
+@import "box";
+
+// Contains styling for all elements in header
+@import "header";
+
+// Contains styling for all elements in sidebar
+@import "sidebar";
+
+// Contains styling for all elements in footer
+@import "footer";
+
+// Contains media queries
+@import "queries";

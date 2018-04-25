@@ -1,0 +1,61 @@
+$primaryTextColor: #545454;
+$secondaryTextColor: #fafafa;
+$defaultFont: 'Roboto Slab', serif;
+
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+
+html {
+    font-size: 16px;
+}
+
+body {
+  font-family: 'Roboto Slab', serif;
+  font-weight: 400;
+  line-height: 1.45;
+  color: $primaryTextColor;
+}
+    
+h1, h2, h3, h4 {
+  margin-bottom: 0.5em;
+  font-weight: inherit;
+  line-height: 1.2;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 3.157em;
+}
+
+h2 {
+    font-size: 2.369em;
+}
+
+h3 {
+    font-size: 1.777em;
+}
+
+h4 {
+    font-size: 1.333em;
+}
+
+h5, p {
+    margin-bottom: 1.3em;
+}
+
+p:last-child {
+    margin: 0;
+}
+
+small {
+    font-size: 0.75em;
+}
+
+a[href="#"] {
+    color: red !important;
+    font-weight: bold;
+}
+
+.uppercase {
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
