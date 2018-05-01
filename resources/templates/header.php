@@ -21,6 +21,7 @@
     <header>
         <div class="siteContainer">
             <div id="titleContainer">
+                <img src="resources/images/logo.svg" alt="">
                 <h1>Voldsramte Kvinder
                     <span class="uppercase">LANDSFORENINGEN FOR VOLDSRAMTE KVINDER</span>
                 </h1>
