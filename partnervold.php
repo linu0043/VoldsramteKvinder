@@ -2,7 +2,7 @@
 $pageTitle = "Partnervold";
 ?>
 
-<?php @include "resources/templates/header.php"; ?>
+<?php @include "./resources/templates/header.php"; ?>
     <main>
         <div class="siteContainer">
             <article>
@@ -42,7 +42,7 @@ $pageTitle = "Partnervold";
                     <li><b>Stalking</b> er en systematisk og vedvarende forfølgelse eller chikane af en anden person. En person, der udøver stalking benævnes en stalker.</li>
                 </ul>
             </article>
-            <?php @include "resources/templates/sidebar.php"; ?>
+            <?php @include "./resources/templates/sidebar.php"; ?>
         </div>
     </main>
-<?php @include "resources/templates/footer.php"; ?>
+<?php @include "./resources/templates/footer.php"; ?>

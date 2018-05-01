@@ -2,7 +2,7 @@
 $pageTitle = "Sannes beretning";
 ?>
 
-<?php @include "resources/templates/header.php"; ?>
+<?php @include "./resources/templates/header.php"; ?>
     <main>
         <div class="siteContainer">
             <article>
@@ -174,7 +174,7 @@ $pageTitle = "Sannes beretning";
                     <p>Den psykiske og fysiske vold vil altid være der.</p>
                 </section>
             </article>
-            <?php @include "resources/templates/sidebar.php"; ?>
+            <?php @include "./resources/templates/sidebar.php"; ?>
         </div>
     </main>
-<?php @include "resources/templates/footer.php"; ?>
+<?php @include "./resources/templates/footer.php"; ?>
