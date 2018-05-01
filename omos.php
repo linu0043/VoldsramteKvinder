@@ -2,7 +2,7 @@
 $pageTitle = "Om os";
 ?>
 
-<?php @include "resources/templates/header.php"; ?>
+<?php @include "./resources/templates/header.php"; ?>
 <main>
     <div class="siteContainer">
         <article>
@@ -20,7 +20,7 @@ $pageTitle = "Om os";
                 <p>Annette er bestyrelsesmedlem og står blandt andet for en Facebook gruppe for pårørende til voldsramt, desuden har hun selv oplevet volden fra flere sider af og er også pårørende til en voldsramt.  </p>
             </section>
         </article>
-        <?php @include "resources/templates/sidebar.php"; ?>
+        <?php @include "./resources/templates/sidebar.php"; ?>
     </div>
 </main>
-<?php @include "resources/templates/footer.php"; ?>
+<?php @include "./resources/templates/footer.php"; ?>

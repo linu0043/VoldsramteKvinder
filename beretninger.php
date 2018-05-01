@@ -2,7 +2,7 @@
 $pageTitle = "Beretninger";
 ?>
 
-<?php @include "resources/templates/header.php"; ?>
+<?php @include "./resources/templates/header.php"; ?>
     <main>
         <div class="siteContainer">
             <article>
@@ -12,7 +12,7 @@ $pageTitle = "Beretninger";
                     <li><a href="sannesberetning.php">Sannes beretning</a></li>
                 </ul>
             </article>
-            <?php @include "resources/templates/sidebar.php"; ?>
+            <?php @include "./resources/templates/sidebar.php"; ?>
         </div>
     </main>
-<?php @include "resources/templates/footer.php"; ?>
+<?php @include "./resources/templates/footer.php"; ?>

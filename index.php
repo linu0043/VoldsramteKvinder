@@ -2,7 +2,7 @@
 $pageTitle = "Forside";
 ?>
 
-<?php @include "/resources/templates/header.php"; ?>
+<?php @include "./resources/templates/header.php"; ?>
     <main>
         <div class="siteContainer">
             <article>
@@ -13,7 +13,7 @@ $pageTitle = "Forside";
                 <p>Endvidere tilbyder vi Caféer, selvhjælpsgrupper, bisidderordning, netværksgrupper og arrangementer, hvis formål er at give voldsramte kvinder med og uden børn mulighed for at skabe et netværk, som de kan trække på, når hverdagens problemerne hober sig op.</p>
                 </section>
             </article>
-            <?php @include "/resources/templates/sidebar.php"; ?>
+            <?php @include "./resources/templates/sidebar.php"; ?>
         </div>
     </main>
-<?php @include "/resources/templates/footer.php"; ?>
+<?php @include "./resources/templates/footer.php"; ?>
