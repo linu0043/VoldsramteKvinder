@@ -19,10 +19,16 @@
 <body>
     <header>
         <div class="siteContainer">
-            <div id="titleContainer">
-                <h1>Voldsramte Kvinder
-                    <span class="uppercase">LANDSFORENINGEN FOR VOLDSRAMTE KVINDER</span>
-                </h1>
+            <div id="headerWrapper">
+                <div id="titleContainer">
+                    <h1>Voldsramte Kvinder
+                        <span class="uppercase">LANDSFORENINGEN FOR voldsramte KVINDER OG BØRN</span>
+                    </h1>
+                </div>
+                <div id="iconContainer">
+                    <a href="#"><i class="headerIcon fab fa-facebook-square"></i></a>
+            	    <a href="mailto:sanne@voldsramtekvinder.dk"><i class="headerIcon fas fa-envelope"></i></a>
+                </div>
             </div>
             <input type="checkbox">
             <span></span>
