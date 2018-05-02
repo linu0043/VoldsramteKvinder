@@ -1,5 +1,5 @@
 <?php 
-$pageTitle = "Forside";
+    $pageTitle = "Forside";
 ?>
 
 <?php @include "./resources/templates/header.php"; ?>

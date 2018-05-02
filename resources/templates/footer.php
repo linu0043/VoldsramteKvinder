@@ -5,12 +5,10 @@
                 <nav>
                     <a href="index.php">Hjem</a>
                     <a href="partnervold.php">Partnervold</a>
-                    <a href="krisehjaelp.php">Krisehjælp</a>
-                    <a href="forum.php">Forum</a>
-                    <a href="beretninger.php">Beretninger</a>
                     <a href="boernogvold.php">Børn og vold</a>
                     <a href="etlivudenvold.php">Et liv uden vold</a>
                     <a href="#">Om os</a>
+                    <a href="forum.php">Forum</a>
                     <a href="#">Kontakt</a>
                     <a href="#">Bliv sponsor</a>
                 </nav>

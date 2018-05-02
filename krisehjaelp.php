@@ -2,7 +2,7 @@
 $pageTitle = "Krisehjælp";
 ?>
 
-<?php @include "resources/templates/header.php"; ?>
+<?php @include "./resources/templates/header.php"; ?>
 <main>
     <div class="siteContainer">
         <article>
@@ -32,7 +32,7 @@ $pageTitle = "Krisehjælp";
                 <p>Hvert år søger knap 2.000 kvinder og 2.000 børn beskyttelse på ét af landets krisecenter under LOKK (Landsorganisation af kvindekrisecentre).</p>
             </section>
         </article>
-        <?php @include "resources/templates/sidebar.php"; ?>
+        <?php @include "./resources/templates/sidebar.php"; ?>
     </div>
 </main>
-<?php @include "resources/templates/footer.php"; ?>
+<?php @include "./resources/templates/footer.php"; ?>

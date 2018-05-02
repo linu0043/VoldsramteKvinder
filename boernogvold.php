@@ -2,7 +2,7 @@
 $pageTitle = "Børn og vold";
 ?>
 
-<?php @include "resources/templates/header.php"; ?>
+<?php @include "./resources/templates/header.php"; ?>
     <main>
         <div class="siteContainer">
             <article>
@@ -28,7 +28,7 @@ $pageTitle = "Børn og vold";
                     </ul>
                 </section>
             </article>
-            <?php @include "resources/templates/sidebar.php"; ?>
+            <?php @include "./resources/templates/sidebar.php"; ?>
         </div>
     </main>
-<?php @include "resources/templates/footer.php"; ?>
+<?php @include "./resources/templates/footer.php"; ?>
