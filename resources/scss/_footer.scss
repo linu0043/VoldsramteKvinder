@@ -1,18 +1,18 @@
 footer {
-    width: 100%;
-    box-sizing: border-box;
+    // width: 100%;
+    // box-sizing: border-box;
     font-size: 0.9em;
     padding: 20px 0;
-    background-color: $primaryColor;
-    color: $secondaryTextColor;
+    // background-color: $primaryColor;
+    // color: $secondaryTextColor;
 
     .siteContainer {
         display: flex;
         justify-content: space-around;
         width: 70%;
-        
+
         a {
-            color: $secondaryTextColor;
+            // color: $secondaryTextColor;
         }
 
         h4 {
@@ -33,14 +33,14 @@ footer {
                 display: flex;
                 flex-direction: column;
                 flex-wrap: wrap;
-    
+
                 a {
-                    transition: transform 0.3s, text-shadow 0.3s;
+                    // transition: transform 0.3s, text-shadow 0.3s;
                 }
-    
+
                 a:hover {
-                    transform:translateX(2px);
-                    text-shadow: 0px 0px 1px $secondaryTextColor;
+                    // transform:translateX(2px);
+                    // text-shadow: 0px 0px 1px $secondaryTextColor;
                 }
             }
         }
@@ -60,10 +60,10 @@ footer {
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    width: 25px;
-                    height: 25px;
-                    background-color: $secondaryTextColor;
-                    border-radius: 50%;
+                    // width: 25px;
+                    // height: 25px;
+                    // background-color: $secondaryTextColor;
+                    // border-radius: 50%;
                     z-index: 0;
                 }
 

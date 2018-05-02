@@ -50,13 +50,13 @@
                         }
 
                         $output .= ">{$page_value}</a>";
-                        
+
                         if($page_value == "Partnervold"){
                             $output .= "<div class='navDropdown'>
                                 <a href='krisehjaelp.php'>Krisehjælp</a>
                             </div>";
                         }
-                        
+
                         if($page_value == "Om os"){
                             $output .= "<div class='navDropdown'>
                                 <a href='lokalforeninger.php'>Lokalforeninger</a>
