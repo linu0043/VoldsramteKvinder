@@ -35,7 +35,7 @@
                     // Associative array containing page information
                     // Key is the file name
                     // Value is the page name used for SEO and for displaying to user
-                    $pages = array("index"=>"Forside", "partnervold"=>"Partnervold", "boernogvold"=>"Børn og vold", "etlivudenvold"=>"Et liv uden vold", "krisehjaelp"=>"Krisehjælp", "beretninger"=>"Beretninger", "omos"=>"Om os", "forum"=>"Forum", "kontakt"=>"Kontakt", "sponsor"=>"Bliv sponsor");
+                    $pages = array("index"=>"Forside", "partnervold"=>"Partnervold", "boernogvold"=>"Børn og vold", "etlivudenvold"=>"Et liv uden vold", "omos"=>"Om os", "forum"=>"Forum", "kontakt"=>"Kontakt", "sponsor"=>"Bliv sponsor");
 
                     foreach($pages as $page => $page_value) {
                         $output = "<div class='navItemContainer'><a href='{$page}.php' ";
@@ -44,8 +44,22 @@
                             $output .= "class='active'";
                         }
 
-                        $output .= ">{$page_value}</a></div>";
+                        $output .= ">{$page_value}</a>";
+                        
+                        if($page_value == "Partnervold"){
+                            $output .= "<div class='navDropdown'>
+                                <a href='krisehjaelp.php'>Krisehjælp</a>
+                            </div>";
+                        }
+                        
+                        if($page_value == "Om os"){
+                            $output .= "<div class='navDropdown'>
+                                <a href='lokalforeninger.php'>Lokalforeninger</a>
+                                <a href='beretninger.php'>Beretninger</a>
+                            </div>";
+                        }
 
+                        $output .= "</div>";
                         echo $output;
                     }
                 ?>
