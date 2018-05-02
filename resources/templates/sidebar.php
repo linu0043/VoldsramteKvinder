@@ -7,10 +7,6 @@
     </div>
     <h5 class="uppercase">BRUG FOR AKUT SAMTALE?</h5>
     <div class="sidebarInfo">
-        <h5 class="uppercase">LOKK HOTLINE:</h5>
-        <i class="fas fa-phone"></i><a href="tel:+4570203082">70 20 30 82</a>
-    </div>
-    <div class="sidebarInfo">
         <h5 class="uppercase">VOLDSRAMTE KVINDER:</h5>
         <i class="fas fa-phone"></i><a href="tel:+4560140101">60 14 01 01</a>
     </div>

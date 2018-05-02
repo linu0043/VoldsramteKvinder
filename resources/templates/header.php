@@ -35,7 +35,7 @@
                     // Associative array containing page information
                     // Key is the file name
                     // Value is the page name used for SEO and for displaying to user
-                    $pages = array("index"=>"Forside", "partnervold"=>"Partnervold", "krisehjaelp"=>"Krisehjælp", "forum"=>"Forum", "beretninger"=>"Beretninger", "boernogvold"=>"Børn og vold", "etlivudenvold"=>"Et liv uden vold", "omos"=>"Om os", "kontakt"=>"Kontakt", "sponsor"=>"Bliv sponsor");
+                    $pages = array("index"=>"Forside", "partnervold"=>"Partnervold", "boernogvold"=>"Børn og vold", "etlivudenvold"=>"Et liv uden vold", "krisehjaelp"=>"Krisehjælp", "beretninger"=>"Beretninger", "omos"=>"Om os", "forum"=>"Forum", "kontakt"=>"Kontakt", "sponsor"=>"Bliv sponsor");
 
                     foreach($pages as $page => $page_value) {
                         $output = "<div class='navItemContainer'><a href='{$page}.php' ";
