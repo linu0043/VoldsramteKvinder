@@ -1,79 +1,132 @@
 footer {
-    // width: 100%;
-    // box-sizing: border-box;
-    font-size: 0.9em;
-    padding: 20px 0;
-    // background-color: $primaryColor;
-    // color: $secondaryTextColor;
-
-    .siteContainer {
-        display: flex;
-        justify-content: space-around;
-        width: 70%;
-
-        a {
-            // color: $secondaryTextColor;
-        }
-
+    @extend %reset;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    width: 100%;
+    background-color: $primaryColor;
+    color: $secondaryTextColor;
+    @include screen-size('large') {
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+    };
+    section.footer-section {
+        @extend %reset;
+        width: 100%;
+        padding: $spacing;
+        @include screen-size('large') {
+            max-width: 30%;
+        };
         h4 {
-            margin-top: 0;
+            @extend %reset-text;
+            margin: $spacing;
+            padding: $spacing;
+            font-size: 1.33em;
+            font-weight: bold;
         }
-
         h5 {
-            letter-spacing: 1px;
-            margin-bottom: 5px;
-            font-weight: 400;
+            @extend %reset-text;
+            margin: $spacing;
+            padding: $spacing;
         }
-
-        #footerNavContainer {
+        a {
+            @extend %reset-link;
+            color: inherit;
+        }
+        hr {
+            @extend %reset;
+            margin: 0 $spacing * 2;
+            border: 1px solid darken($primaryColor, 5%);
+        }
+        article {
+            @extend %reset;
             display: flex;
-            flex-direction: column;
-            width: 300px;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            align-items: flex-start;
+            align-content: flex-start;
+            > * {
+                flex-grow: 1;
+                flex-shrink: 1;
+                flex-basis: 100%;
+                @include screen-size('medium') {
+                    flex-basis: 45%;
+                };
+                @include screen-size('large') {
+                    flex-basis: 100%;
+                };
+            }
+        }
+        &#footer-nav-section {
             nav {
-                display: flex;
-                flex-direction: column;
-                flex-wrap: wrap;
-
-                a {
-                    // transition: transform 0.3s, text-shadow 0.3s;
-                }
-
-                a:hover {
-                    // transform:translateX(2px);
-                    // text-shadow: 0px 0px 1px $secondaryTextColor;
+                @extend %reset;
+                ul {
+                    @extend %reset-list;
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    justify-content: flex-start;
+                    align-items: flex-start;
+                    align-content: flex-start;
+                    li {
+                        @extend %reset-list;
+                        flex-grow: 1;
+                        flex-shrink: 1;
+                        flex-basis: 45%;
+                        margin: $spacing;
+                        @include screen-size('large') {
+                            flex-basis: 100%;
+                        };
+                        a {
+                            padding: $spacing;
+                            transition: transform 0.3s, text-shadow 0.3s;
+                            &:hover {
+                                transform:translateX(2px);
+                                text-shadow: 0px 0px 1px $secondaryTextColor;
+                            }
+                        }
+                    }
                 }
             }
         }
-
-
-        #footerContact {
-            display: flex;
-            flex-direction: column;
-
-            .contactItem {
-                display: flex;
-                align-items: center;
-                text-indent: 5px;
-                margin-bottom: 10px;
-
-                div {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    // width: 25px;
-                    // height: 25px;
-                    // background-color: $secondaryTextColor;
-                    // border-radius: 50%;
-                    z-index: 0;
-                }
-
-                .fa-2x {
-                    font-size: 1.3em;
-                    width: 20.8px;
-                }
-                svg{
-                    z-index: 1;
-                    color: $primaryColor;
+        &#footer-contact-section {
+            ul {
+                @extend %reset-list;
+                li {
+                    @extend %reset-list;
+                    margin: $spacing;
+                    a {
+                        display: flex;
+                        flex-direction: row;
+                        flex-wrap: nowrap;
+                        justify-content: flex-start;
+                        align-items: center;
+                        i, svg {
+                            @extend %reset-text;
+                            flex-grow: 0;
+                            flex-shrink: 0;
+                            flex-basis: auto;
+                            width: 25px;
+                            height: 25px;
+                            margin: 0 $spacing 0 0;
+                            @include screen-size('medium') {
+                                margin: 0 $spacing;
+                            };
+                            @include screen-size('large') {
+                                margin: $spacing;
+                            };
+                        }
+                        span {
+                            flex-grow: 0;
+                            flex-shrink: 1;
+                            flex-basis: auto;
+                            padding: $spacing;
+                        }
+                    }
                 }
             }
         }

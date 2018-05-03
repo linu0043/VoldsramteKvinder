@@ -1,0 +1,14 @@
+// The breakpoints are based on Universal Windows Platforms, for no particulary reason. Source: https://docs.microsoft.com/en-us/windows/uwp/design/layout/screen-sizes-and-breakpoints-for-responsive-design
+// The breakpoints are the minimum screen size.
+ $breakpoints: (
+ 'medium': 641px,
+ 'large': 1008px
+ ) !default;
+
+ @mixin screen-size($breakpoint) {
+     @if map-has-key($breakpoints, $breakpoint) {
+        @media screen and (min-width: map-get($breakpoints, $breakpoint)) {
+            @content;
+        }
+     }
+ }

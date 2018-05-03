@@ -53,3 +53,27 @@ table {
 a {
     text-decoration: none;
 }
+%reset {
+    box-sizing: border-box;
+    display: block;
+    margin: 0;
+    outline: 0;
+    border: 0;
+    // border: 1px dashed fuchsia;
+    padding: 0;
+    vertical-align: baseline;
+}
+%reset-list {
+    @extend %reset;
+    list-style-type: none;
+}
+%reset-text {
+    @extend %reset;
+    line-height: 1;
+    font-size: 1em;
+    font-weight: normal;
+}
+%reset-link {
+    @extend %reset-text;
+    text-decoration: none;
+}

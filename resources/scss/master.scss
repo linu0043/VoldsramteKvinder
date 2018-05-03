@@ -1,8 +1,13 @@
 // Cubic-bezier used for transitions across the page
 $bezier: cubic-bezier(0.77,0.2,0.05,1.0);
+// Spacing used across pages:
+$spacing: 3.6px;
 
 // Contains styling used to reset unwanted styling
 @import "reset";
+
+// Breakpoints used for responsive design in other SCSS files.
+@import "breakpoints";
 
 // Contains color variables used in other SCSS files
 @import "color";
@@ -24,5 +29,3 @@ $bezier: cubic-bezier(0.77,0.2,0.05,1.0);
 
 // Contains media queries
 @import "queries";
-
-@import "footer--wip";
